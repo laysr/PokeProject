@@ -12,116 +12,132 @@ public class Move {
 	double power;
 	MoveType type;
 	
-	public void thunderbolt() {
+	 public static Move createThunderbolt() {
 		Move thunderbolt = new Move();
-		thunderbolt.name = "Thunderbolt!";
+		thunderbolt.name = "Thunderbolt";
 		thunderbolt.power = 48;
 		thunderbolt.type = MoveType.ELECTRIC;
-	}
+		return thunderbolt;
+	 }
 
-	public void spark() {
+	public static Move createSpark() {
 		Move spark = new Move();
-		spark.name = "Spark!";
+		spark.name = "Spark";
 		spark.power = 40;
 		spark.type = MoveType.ELECTRIC;
+		return spark;
 	}
 
-	public void thunder() {
+	public static Move createThunder() {
 		Move thunder = new Move();
-		thunder.name = "Thunder!";
+		thunder.name = "Thunder";
 		thunder.power = 50;
 		thunder.type = MoveType.ELECTRIC;
+		return thunder;
 	}
 
-	public void quickAttack() {
+	public static Move createQuickAttack() {
 		Move quickAttack = new Move();
-		quickAttack.name = "Quick attack!";
+		quickAttack.name = "Quick attack";
 		quickAttack.power = 28;
 		quickAttack.type = MoveType.NORMAL;
+		return quickAttack;
 	}
 	
-	public void vineWhip() {
+	public static Move createVineWhip() {
 		Move vineWhip = new Move();
-		vineWhip.name = "Vine whip!";
+		vineWhip.name = "Vine whip";
 		vineWhip.power = 26;
 		vineWhip.type = MoveType.GRASS;
+		return vineWhip;
 	}
 
-	public void razorLeaf() {
+	public static Move createRazorLeaf() {
 		Move razorLeaf = new Move();
-		razorLeaf.name = "Razor leaf!";
+		razorLeaf.name = "Razor leaf";
 		razorLeaf.power = 46;
 		razorLeaf.type = MoveType.GRASS;
+		return razorLeaf;
 	}
 
-	public void megaDrain() {
+	public static Move createMegaDrain() {
 		Move megaDrain = new Move();
-		megaDrain.name = "Mega drain!";
+		megaDrain.name = "Mega drain";
 		megaDrain.power = 30;
 		megaDrain.type = MoveType.GRASS;
+		return megaDrain;
 	}
 
-	public void doubleEdge() {
+	public static Move createDoubleEdge() {
 		Move doubleEdge = new Move();
-		doubleEdge.name = "Double edge!";
+		doubleEdge.name = "Double edge";
 		doubleEdge.power = 18;
 		doubleEdge.type = MoveType.NORMAL;
+		return doubleEdge;
 	}
 	
-	public void ember() {
+	public static Move createEmber() {
 		Move ember = new Move();
-		ember.name = "Ember!";
+		ember.name = "Ember";
 		ember.power = 40;
 		ember.type = MoveType.FIRE;
+		return ember;
 	}
 
-	public void flamethrower() {
+	public static Move createFlamethrower() {
 		Move flamethrower = new Move();
-		flamethrower.name = "Flamethrower!";
+		flamethrower.name = "Flamethrower";
 		flamethrower.power = 50;
 		flamethrower.type = MoveType.FIRE;
+		return flamethrower;
 	}
 
-	public void fireSpin() {
+	public static Move createFireSpin() {
 		Move fireSpin = new Move();
-		fireSpin.name = "Fire spin!";
+		fireSpin.name = "Fire spin";
 		fireSpin.power = 20;
 		fireSpin.type = MoveType.FIRE;
+		return fireSpin;
 	}
 
-	public void Scratch() {
+	public static Move createScratch() {
 		Move scratch = new Move();
-		scratch.name = "Scratch!";
+		scratch.name = "Scratch";
 		scratch.power = 26;
 		scratch.type = MoveType.NORMAL;
+		return scratch;
 	}
 	
-	public void surf() {
+	public static Move createSurf() {
 		Move surf = new Move();
-		surf.name = "Surf!";
+		surf.name = "Surf";
 		surf.power = 46;
 		surf.type = MoveType.WATER;
+		return surf;
 	}
 
-	public void hydroPump() {
+	public static Move createHydroPump() {
 		Move hydroPump = new Move();
-		hydroPump.name = "Hydro pump!";
+		hydroPump.name = "Hydro pump";
 		hydroPump.power = 50;
 		hydroPump.type = MoveType.WATER;
+		return hydroPump;
 	}
 
-	public void bubbles() {
+	public static Move createBubbles() {
 		Move bubbles = new Move();
-		bubbles.name = "Bubbles!";
+		bubbles.name = "Bubbles";
 		bubbles.power = 32;
 		bubbles.type = MoveType.WATER;
+		return bubbles;
 	}
 
-	public void headbutt() {
+	public static Move createHeadbutt() {
 		Move headbutt = new Move();
-		headbutt.name = "Headbutt!";
+		headbutt.name = "Headbutt";
 		headbutt.power = 24;
 		headbutt.type = MoveType.NORMAL;
+		return headbutt;
 	}
 
 }

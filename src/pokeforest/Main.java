@@ -74,6 +74,7 @@ public class Main {
 
 		}
 		
+		System.out.println("Escolha um ataque, seus ataques são: \n 1:" + ally.getPokemon1().move1.name + "\n 2:" + ally.getPokemon1().move2.name + "\n 3:" + ally.getPokemon1().move3.name + "\n 4:" + ally.getPokemon1().move4.name);
 		
 
 	}

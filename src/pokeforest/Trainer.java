@@ -8,6 +8,30 @@ public class Trainer {
 	private Pokemon pokemon4;
 	private Pokemon pokemon5;
 	private Pokemon pokemon6;
+	
+	public Pokemon getPokemon1(){
+		return pokemon1;
+	}
+	
+	public Pokemon getPokemon2(){
+		return pokemon2;
+	}
+	
+	public Pokemon getPokemon3(){
+		return pokemon3;
+	}
+	
+	public Pokemon getPokemon4(){
+		return pokemon4;
+	}
+	
+	public Pokemon getPokemon5(){
+		return pokemon5;
+	}
+	
+	public Pokemon getPokemon6(){
+		return pokemon6;
+	}
 
 	public void setPokemon1(Pokemon pokemon) {
 		pokemon1 = pokemon;

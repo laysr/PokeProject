@@ -5,6 +5,7 @@ public class Pokemon {
 	double HP = 100;
 	int level, energy, exp;
 	String attackType;
+	Move move1, move2, move3, move4;
 
 	public Pokemon() {
 		setLevel(1);
