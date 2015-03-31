@@ -33,13 +33,12 @@ public class Pokemon {
 
 	
 
-	public void setHPheal() {
+	public double setHPheal() {
 		int num = 0;
 		while (num <= level) {
 			num = num + 1;
 			HP = HP + HP * 0.5;
 		}
+		return HP;
 	}
-
-	
 }
