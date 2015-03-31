@@ -7,7 +7,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		System.out
-				.println("Escolha o seu pokemon inicial: \n 0: Pikachu \n 1: Bulbasauro \n 2: Charmander \n 3: Squirtle");
+				.println("Escolha o seu pokemon inicial: \n 1: Pikachu \n 2: Bulbasauro \n 3: Charmander \n 4: Squirtle");
 		Scanner ent = new Scanner(System.in);
 		Random gerador = new Random();
 		Trainer ally = new Trainer();
@@ -15,27 +15,27 @@ public class Main {
 		boolean goOn = false;
 		int choosepkm = ent.nextInt();
 		while (goOn == false) {
-			if (choosepkm == 0) {
+			if (choosepkm == 1) {
 				goOn = true;
 
 				System.out.println("Parabéns, você recebeu uma pokeball com um Pikachu!");
 				Pikachu pikachu = new Pikachu();
 				ally.setPokemon1(pikachu);
 
-			} else if (choosepkm == 1) {
+			} else if (choosepkm == 2) {
 				goOn = true;
 
 				System.out.println("Parabéns, você recebeu uma pokeball com um Bulbasauro!");
 				Bulbasaur bulbasaur = new Bulbasaur();
 				ally.setPokemon1(bulbasaur);
 
-			} else if (choosepkm == 2) {
+			} else if (choosepkm == 3) {
 				goOn = true;
 
 				System.out.println("Parabéns, você recebeu uma pokeball com um Charmander!");
 				Charmander charmander = new Charmander();
 				ally.setPokemon1(charmander);
-			} else if (choosepkm == 3) {
+			} else if (choosepkm == 4) {
 				goOn = true;
 
 				System.out.println("Parabéns, você recebeu uma pokeball com um Squirtle!");
@@ -47,32 +47,34 @@ public class Main {
 
 			}
 		}
-		System.out.println("Seu pokemon está pronto para batalhar!");
-		int battle1 = gerador.nextInt(4);
-		while (battle1 == choosepkm) {
+		System.out.println("Seu pokemon está pronto para batalhar, sua primeira baralha está prestes a começar...");
+		int battle1 = gerador.nextInt(5);
+		while (battle1 == choosepkm || battle1 == 0) {
 			battle1 = gerador.nextInt(4);
 		}
-		if (battle1 == 0) {
+		if (battle1 == 1) {
 			Pikachu pikachu = new Pikachu();
 			enemy.setPokemon1(pikachu);
 			System.out.println("Seu oponente é um pikachu!");
 
-		} else if (battle1 == 1) {
+		} else if (battle1 == 2) {
 			Bulbasaur bulbasaur = new Bulbasaur();
 			enemy.setPokemon1(bulbasaur);
 			System.out.println("Seu oponente é um bulbasauro!");
 
-		} else if (battle1 == 2) {
+		} else if (battle1 == 3) {
 			Charmander charmander = new Charmander();
 			enemy.setPokemon1(charmander);
 			System.out.println("Seu oponente é um charmander!");
 
-		} else if (battle1 == 3) {
+		} else if (battle1 == 4) {
 			Squirtle squirtle = new Squirtle();
 			enemy.setPokemon1(squirtle);
 			System.out.println("Seu oponente é um squirtle!");
 
 		}
+		
+		
 
 	}
 }
