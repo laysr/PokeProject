@@ -9,7 +9,7 @@ public class Move {
 		NORMAL
 	}
 	String name;
-	double power;
+	int power;
 	MoveType type;
 	
 	 public static Move createThunderbolt() {
