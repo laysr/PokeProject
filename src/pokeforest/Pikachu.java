@@ -1,23 +1,27 @@
 package pokeforest;
 
 public class Pikachu extends Pokemon{
-	public void thundershock() {
-		System.out.println("Thundershock!");
+	public void thunderbolt() {
+		System.out.println("Thunderbolt!");
 		attackPower = 48;
+		attackType = "electric";
 	}
 
-	public void ironTail() {
-		System.out.println("Iron tail!");
-		attackPower = 44;
+	public void spark() {
+		System.out.println("Spark!");
+		attackPower = 40;
+		attackType = "electric";
 	}
 
-	public void bite() {
-		System.out.println("Bite!");
-		attackPower = 38;
+	public void thunder() {
+		System.out.println("Thunder!");
+		attackPower = 50;
+		attackType = "electric";
 	}
 
-	public void doubleEdge() {
-		System.out.println("Double edge!");
-		attackPower = 18;
+	public void quickAttack() {
+		System.out.println("Quick attack!");
+		attackPower = 28;
+		attackType = "normal";
 	}
 }

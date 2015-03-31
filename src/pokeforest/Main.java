@@ -1,43 +1,78 @@
 package pokeforest;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
 
 	public static void main(String[] args) {
-		System.out.println("Escolha o seu pokemon inicial: \n A: Pikachu \n B: Bulbasauro \n C: Charmander \n D: Squirtle");
-		Pikachu pikachu = new Pikachu();
-		Bulbasaur bulbasaur = new Bulbasaur();
-		Charmander charmander = new Charmander();
-		Squirtle squirtle = new Squirtle();
+		System.out
+				.println("Escolha o seu pokemon inicial: \n 0: Pikachu \n 1: Bulbasauro \n 2: Charmander \n 3: Squirtle");
 		Scanner ent = new Scanner(System.in);
+		Random gerador = new Random();
+		Trainer ally = new Trainer();
+		Trainer enemy = new Trainer();
 		boolean goOn = false;
+		int choosepkm = ent.nextInt();
 		while (goOn == false) {
-			String choosepkm = ent.next();
-			if (choosepkm.equals("a") || choosepkm.equals("A")) {
+			if (choosepkm == 0) {
 				goOn = true;
 
 				System.out.println("Parabéns, você recebeu uma pokeball com um Pikachu!");
+				Pikachu pikachu = new Pikachu();
+				ally.setPokemon1(pikachu);
 
-			} else if (choosepkm.equals("b") || choosepkm.equals("B")) {
+			} else if (choosepkm == 1) {
 				goOn = true;
 
 				System.out.println("Parabéns, você recebeu uma pokeball com um Bulbasauro!");
+				Bulbasaur bulbasaur = new Bulbasaur();
+				ally.setPokemon1(bulbasaur);
 
-			} else if (choosepkm.equals("c") || choosepkm.equals("C")) {
+			} else if (choosepkm == 2) {
 				goOn = true;
 
 				System.out.println("Parabéns, você recebeu uma pokeball com um Charmander!");
-
-			} else if (choosepkm.equals("d") || choosepkm.equals("D")) {
+				Charmander charmander = new Charmander();
+				ally.setPokemon1(charmander);
+			} else if (choosepkm == 3) {
 				goOn = true;
 
 				System.out.println("Parabéns, você recebeu uma pokeball com um Squirtle!");
+				Squirtle squirtle = new Squirtle();
+				ally.setPokemon1(squirtle);
 
 			} else {
 				System.out.println("Opção inválida.");
 
 			}
 		}
+		System.out.println("Seu pokemon está pronto para batalhar!");
+		int battle1 = gerador.nextInt(4);
+		while (battle1 == choosepkm) {
+			battle1 = gerador.nextInt(4);
+		}
+		if (battle1 == 0) {
+			Pikachu pikachu = new Pikachu();
+			enemy.setPokemon1(pikachu);
+			System.out.println("Seu oponente é um pikachu!");
+
+		} else if (battle1 == 1) {
+			Bulbasaur bulbasaur = new Bulbasaur();
+			enemy.setPokemon1(bulbasaur);
+			System.out.println("Seu oponente é um bulbasauro!");
+
+		} else if (battle1 == 2) {
+			Charmander charmander = new Charmander();
+			enemy.setPokemon1(charmander);
+			System.out.println("Seu oponente é um charmander!");
+
+		} else if (battle1 == 3) {
+			Squirtle squirtle = new Squirtle();
+			enemy.setPokemon1(squirtle);
+			System.out.println("Seu oponente é um squirtle!");
+
+		}
+
 	}
 }
