@@ -74,16 +74,13 @@ public class Main {
 
 		}
 		
-			ally.getPokemon1().setLevel(ent.nextInt());
-			ally.getPokemon1().setHPheal();
-			enemy.getPokemon1().setLevel(ent.nextInt());
-			enemy.getPokemon1().setHPheal();
-		
-		
+			
+		ally.getPokemon1().setLevel(1);
+		System.out.println("Seu pokemon possui " + ally.getPokemon1().HP + " HP");
 		System.out.println("Escolha um ataque, seus ataques são: \n 1:" + ally.getPokemon1().move1.name + "\n 2:" + ally.getPokemon1().move2.name + "\n 3:" + ally.getPokemon1().move3.name + "\n 4:" + ally.getPokemon1().move4.name);
 		int chooseMove = ent.nextInt();
 		if (chooseMove == 1){
-			
+			 
 			}
 			
 					

@@ -1,9 +1,8 @@
 package pokeforest;
 
 public class Pokemon {
-	public double power, attackPower, hploss, weight, height;
-	double HP = 100;
-	int level, energy, exp;
+	public double weight, height;
+	int HP = 100, hploss, power, attackPower, level, energy, exp;
 	String attackType;
 	Move move1, move2, move3, move4;
 
@@ -15,7 +14,7 @@ public class Pokemon {
 
 	public void setPower(int level) {
 		this.level = level;
-		power = 0.5 * level;
+		power = 5 * level / 10;
 	}
 
 	public void setLevel(int level) {
@@ -34,10 +33,10 @@ public class Pokemon {
 	
 
 	public double setHPheal() {
-		int num = 0;
+		int num = 1;
 		while (num <= level) {
 			num = num + 1;
-			HP = HP + HP * 0.5;
+			HP = HP + HP * 5 / 10;
 		}
 		return HP;
 	}
